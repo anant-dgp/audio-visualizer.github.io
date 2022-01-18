@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music Visualizer</title>
+        <link rel = "stylesheet" href="./css/style.css">
+        <script src="./jsFiles/visualizer.js"></script>
+        <script src="./jsFiles/microphone.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="nav-bar">
+            <div id="left">
+                <img src="./images/mvLogo2.PNG" alt="Music Visualizer">
+            </div>
+            <div id="right">
+                <div class="text"><p>Start Visualizer</p></div>
+                <div class="container">
+                    <div id="togglt-btn" onclick="this.classList.toggle('active'); main()">
+                        
+                        <div class="inner-circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <canvas id="myCanvas"></canvas>
+    </body>
+</html>
